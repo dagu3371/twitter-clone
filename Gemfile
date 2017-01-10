@@ -6,8 +6,7 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'bcrypt', '3.1.11'
 #Bootstrap gem 
 gem 'bootstrap-sass', '3.3.6'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -38,6 +37,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'minitest', group: :test 
   gem 'minitest-reporters', group: :test
+  # Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 end
 
 group :development do
