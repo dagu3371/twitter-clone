@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       # Log the user in and redirect to the user's show page.
       log_in user
       remember user
-      redirect_to user
+      redirect_back_or user
 
     else
       # Create an error message.
@@ -19,5 +19,5 @@ class SessionsController < ApplicationController
     log_out if logged_in?
     redirect_to root_url
   end
-  end
+  
 end
